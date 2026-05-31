@@ -1,0 +1,6 @@
+city,latitude,longitude,weather_main,weather_description,base,temperature,feels_like,minimum_temperature,maximum_temperature,pressure,humidity,sea_level,ground_level,visibility,wind_speed,wind_direction,gust,clouds,weather_time,sunrise,sunset,country,location_name,extraction_time
+panda,9.2624,7.8385,Rain,moderate rain,stations,22.91,23.63,22.91,22.91,1012,91,1012,969,10000,0.62,182,4.02,100,2026-05-31 20:15:36,2026-05-31 05:07:48,2026-05-31 17:45:09,NG,Maitama,2026-05-31 20:15:36.945665
+gurara,9.322,7.0232,Rain,moderate rain,stations,24.53,25.21,24.53,24.53,1012,83,1012,971,10000,4.72,117,10.1,100,2026-05-31 20:15:37,2026-05-31 05:10:58,2026-05-31 17:48:31,NG,Suleja,2026-05-31 20:15:37.088036
+bwari,9.2856,7.3787,Rain,heavy intensity rain,stations,21.05,21.51,21.05,21.05,1013,88,1013,949,10000,4.12,152,10.58,100,2026-05-31 20:15:37,2026-05-31 05:09:36,2026-05-31 17:47:02,NG,Maitama,2026-05-31 20:15:37.220445
+gwagwalada,9.0764,6.9854,Rain,moderate rain,stations,24.82,25.55,24.82,24.82,1012,84,1012,989,10000,7.0,95,12.84,92,2026-05-31 20:15:37,2026-05-31 05:11:32,2026-05-31 17:48:15,NG,Kwali,2026-05-31 20:15:37.352688
+makurdi,7.7306,8.5361,Clouds,overcast clouds,stations,27.85,31.44,27.85,27.85,1011,78,1011,1000,10000,2.33,196,7.04,86,2026-05-31 20:15:37,2026-05-31 05:07:33,2026-05-31 17:39:49,NG,Walmayo,2026-05-31 20:15:37.492800
