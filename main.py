@@ -8,6 +8,7 @@ load_dotenv()
 
 API_KEY = os.getenv("OPENWEATHER_API_KEY")
 
+
 locations = [
     {"city": "panda", "lat": 9.26242, "lon": 7.83852},
     {"city": "gurara", "lat": 9.3220, "lon": 7.0232},
@@ -58,6 +59,22 @@ for location in locations:
     all_weather_data.append(weather_record)
 
 df= pd.DataFrame(all_weather_data)
+
+df["city"] = df["city"].str.strip().str.lower()
+df["weather_main"] = df["weather_main"].str.strip().str.lower()
+df["weather_description"] = df["weather_description"].str.strip().str.lower()
+df["country"] = df["country"].str.strip().str.upper()
+df["weather_time"] = pd.to_datetime(df["weather_time"])
+df["weather_hour"] = df["weather_time"].dt.hour
+df["sunrise"] = pd.to_datetime(df["sunrise"])
+df["sunset"] = pd.to_datetime(df["sunset"])
+df["extraction_time"] = pd.to_datetime(df["extraction_time"])
+df["date"] = df["weather_time"].dt.date
+df["time"] = df["weather_time"].dt.time
+df["day_of_week"] = df["weather_time"].dt.day_name()
+
+df = df.drop_duplicates()
+
 print(df)
 
 file_path = "weather_data.csv"
